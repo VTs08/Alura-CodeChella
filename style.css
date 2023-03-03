@@ -1,0 +1,31 @@
+@import url(./css/header.css);
+
+:root {
+    --font-principal: 'Raleway', sans-serif;
+    --font-calistoga: 'Calistoga', cursive;
+    --branco: #FFFFFF;
+    --roxo: #4650BD;
+}
+
+body {
+    font-family: var(--font-principal);
+}
+
+.banner{
+    width: 100vw;
+}
+
+.banner--tablet {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .banner--tablet {
+        display: block;
+        width: 100vw;
+    }
+
+    .banner {
+        display: none;
+    }
+}
