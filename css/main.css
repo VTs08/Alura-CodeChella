@@ -105,6 +105,10 @@
   text-align: center;
  }
 
+.lineUp--cantor--linhaUm, .lineUp--cantor--linhaDois, .lineUp--cantor--linhaTres {
+ margin: 0 0.5rem;
+}
+
  .lineUp--cantores--linhaDois {
   width: 90%;
   margin: 2.5rem auto;
@@ -134,8 +138,6 @@
  }
 
  figure img {
-  max-height: 338px;
-  height: 100%;
   width: 100%;
   margin: 2rem 0;
  }
@@ -182,6 +184,5 @@
 
    .imagem {
       width: 100%;
-      height: 338px;
    }
  }
