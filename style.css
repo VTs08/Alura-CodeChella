@@ -1,31 +1,58 @@
 @import url(./css/header.css);
+@import url(./css/main.css);
 
 :root {
     --font-principal: 'Raleway', sans-serif;
     --font-calistoga: 'Calistoga', cursive;
     --branco: #FFFFFF;
+    --preto: #000000;
     --roxo: #4650BD;
+    --verde: #008364;
+    --roxo-claro: #606ADA;
 }
 
 body {
     font-family: var(--font-principal);
+    background: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%) no-repeat;
 }
 
-.banner{
-    width: 100vw;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 96%;
 }
 
-.banner--tablet {
+.banner--desktop, .banner--tablet {
+    width: 100%;
+    height: auto;
+}
+
+.banner--mobile, .banner--tablet {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .banner--tablet {
-        display: block;
-        width: 100vw;
-    }
+.button {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--roxo);
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px var(--preto);
+}
 
-    .banner {
+.button:hover {
+    background-color: var(--roxo-claro);
+}
+
+@media screen and (max-width: 1024px) {
+    .banner--desktop {
         display: none;
     }
+
+    .banner--tablet {
+        display: block;
+        z-index: 1;
+    }
 }
+

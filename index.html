@@ -12,24 +12,104 @@
     <title>Home | CodeChella</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="#" class="logo">
-            <img src="./img/Logo Branca.png" alt="Logo da CodeChella" class="logo__imagem">
-        </a>
+    <header>
+        <div class="container cabecalho">
+            <a href="#" class="logo">
+                <img src="./img/Logo Branca.png" alt="Logo da CodeChella" class="logo__imagem">
+            </a>
 
-            <input type="checkbox" id="check">
-            <label id="icone" for="check"><img src="./img/menu.svg" alt=""></label>
+                <input type="checkbox" id="check">
+                <label id="icone" for="check">
+                    <img src="./img/menu.svg" alt="">
+                </label>
 
-        <nav class="cabecalho__navegacao">
-            <a class="cabecalho__navegacao__item" href="#">A experiência</a>
-            <a class="cabecalho__navegacao__item" href="#">Mapa de Setores</a>
-            <a class="cabecalho__navegacao__item" href="#">Informações</a>
-            <a class="cabecalho__navegacao__item" href="#">Ingresso</a>
-        </nav>
+            <nav class="cabecalho__navegacao">
+                <a class="cabecalho__navegacao__item" href="#">A experiência</a>
+                <span class="barra"></span>   
+                <a class="cabecalho__navegacao__item" href="#">Mapa de Setores</a>
+                <span class="barra"></span>
+                <a class="cabecalho__navegacao__item" href="#">Informações</a>
+                <span class="barra"></span>
+                <a class="cabecalho__navegacao__item" href="#">Ingresso</a>
+            </nav>
+        </div>
     </header>
 
-    <img src="./img/Boreal.png" alt="Banner da CodeChella, Aurora Boreal" class="banner">
-    <img src="./img/Banner- Homepage-768px.png" alt="Banner da CodeChella, Aurora Boreal" class="banner--tablet">
+    <img src="./img/banner-desktop.png" alt="Banner da CodeChella, Aurora Boreal" class="banner--desktop">
+    <img src="./img/Banner-tablet.png" alt="Banner da CodeChella, Aurora Boreal" class="banner--tablet">
+    <img src="./img/banner-mobile.png" alt="banner da CodeChella, Aurora Boreal" class="banner--mobile">
     
+    <main class="container">
+        <section class="banda-destaque">
+            <img src="./img/banda.png" alt="Banda em destaque" class="banda"> 
+            <div class="banda-destaque-box">
+                <h1>< 11 e 12 de Março > Aluródromo de São Paulo</h1>
+                <p>Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
+                <a href="#" class="button button-ingresso">Comprar ingresso!</a>
+            </div>
+        </section>
+
+        <section class="lineUp">
+            <h2 class="lineUp--titulo">/Line-Up/</h2>
+            <div class="lineUp--sabado">
+                <div class="lineUp--dias--container">
+                    <div class="lineUp--barra"></div>
+                    <h3 class="lineUp--dias sabado">Sábado <11/03></h3>
+                    <div class="lineUp--barra"></div>
+                </div>
+                <h4 class="lineUp--cantorPrincipal">System of a DOM</h4>
+                <div class="lineUp--cantores--linhaUm">
+                    <span class="lineUp--cantor--linhaUm">Python Maiden</span>
+                    <span class="lineUp--cantor--linhaUm">Apollo Client 2001</span>
+                    <span class="lineUp--cantor--linhaUm">Bon java</span>
+                    <span class="lineUp--cantor--linhaUm">NickCallback</span>
+                </div>
+                <div class="lineUp--cantores--linhaDois">
+                    <span class="lineUp--cantor--linhaDois">Linkin Promises</span>
+                    <span class="lineUp--cantor--linhaDois">Fullstack Fighters</span>
+                    <span class="lineUp--cantor--linhaDois">Papa React</span>
+                    <span class="lineUp--cantor--linhaDois">Angular in Chains</span>
+                </div>
+                <div class="lineUp--cantores--linhaTres">
+                    <span class="lineUp--cantor--linhaTres">Agnostic Front-end</span>
+                    <span class="lineUp--cantor--linhaTres">SlipkNode</span>
+                    <span class="lineUp--cantor--linhaTres">Pink Flutter</span>
+                    <span class="lineUp--cantor--linhaTres">Kiss</span>
+                </div>
+            </div>
+
+            <div class="lineUp--domingo">
+                <div class="lineUp--dias--container">
+                    <div class="lineUp--barra"></div>
+                    <h3 class="lineUp--dias domingo">Domingo <12/03></h3>
+                    <div class="lineUp--barra"></div>
+                </div>
+                <h4 class="lineUp--cantorPrincipal">Lana Del Ploy</h4>
+                <div class="lineUp--cantores--linhaUm">
+                    <span class="lineUp--cantor--linhaUm">Dua Lib</span>
+                    <span class="lineUp--cantor--linhaUm">The Backnd</span>
+                    <span class="lineUp--cantor--linhaUm">CSS Style</span>
+                    <span class="lineUp--cantor--linhaUm">DJ Query</span>
+                    <span class="lineUp--cantor--linhaUm">ArrayAna Grande</span>
+                </div>
+                <div class="lineUp--cantores--linhaDois lineUp--cantores--linhaDois--domingo">
+                    <span class="lineUp--cantor--linhaDois">Miley Cypress</span>
+                    <span class="lineUp--cantor--linhaDois">The Booststrap Boys</span>
+                    <span class="lineUp--cantor--linhaDois">Json Derulo</span>
+                    <span class="lineUp--cantor--linhaDois">CloudPlay</span>
+                    <span class="lineUp--cantor--linhaDois">Dev Lovato</span>
+                </div>
+                <div class="lineUp--cantores--linhaTres">
+                    <span class="lineUp--cantor--linhaTres">Kylie MiLOG</span>
+                    <span class="lineUp--cantor--linhaTres">Jenkins Brothers</span>
+                    <span class="lineUp--cantor--linhaTres">Rubycat Dolls</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <figure>
+        <img class="imagem" src="img/Imagem.png" alt="imagem ilustrativa, tocando guitarra-">
+    </figure>
+
 </body>
 </html

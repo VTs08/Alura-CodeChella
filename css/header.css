@@ -1,78 +1,71 @@
-.cabecalho {
+header {
     background-color: var(--roxo);
-    padding: 32px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    row-gap: 32px;
-    justify-content: space-around;
+    padding: 24px 0;
 }
 
-.logo, .logo__imagem {
-    width: 233px;
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .cabecalho__navegacao {
     display: flex;
-    gap: 2em;
+    column-gap: 2rem;
 }
 
 .cabecalho__navegacao__item {
+    text-decoration: none;
+    color: var(--branco);
     font-size: 20px;
     font-weight: 700;
-    color: var(--branco);
-    text-decoration: none;
 }
 
 #check, #icone {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .cabecalho {
-        justify-content: space-between;
-        padding: 32px 24px;
+        justify-content: center;
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    #icone {
+        display: block;
     }
 
-    .logo, .logo__imagem {
-        width: 200px;
+    .cabecalho {
+        justify-content: space-between;
     }
 
     .cabecalho__navegacao {
         flex-direction: column;
         gap: 1em;
+        padding-bottom: 1rem;
         display: none;
         position: absolute;
-        right: 0;
-        top: -121px;
         background-color: var(--roxo);
-        width: 100%;
-
+        width: 100vw;
+        left: 0;
+        top: 115px;
     }
 
-    .cabecalho__navegacao__item {
-        border-bottom: 1px solid var(--branco);
-        padding-bottom: 1em;
-        width: 100%;
-        text-align: center;
-    }
-
-    .cabecalho__navegacao__item:nth-child(4) {
-        border: none;
-        padding-bottom: 1em;
-    }
-
-    #check {
-        display: none;
-    }
-    
-    #icone {
-        cursor: pointer;
-        display: block;
-    } 
-    
     #check:checked ~ .cabecalho__navegacao {
         display: flex;
-        top: 121px;
-    } 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
+    .barra {
+        width: 35%;
+        height: 1px;
+        background-color: var(--branco);
+    }
 }
